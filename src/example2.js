@@ -1,13 +1,13 @@
 //This example shows a "text" read more or less when clicking on a button
 
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 function LessText({ text, maxLength }) {
 
-  const [hidden, setHidden] = useState(true);
+  const [hidden, setHidden] = useState(true)
 
   if (text.length <= maxLength) {
-    return <span>{text}</span>;
+    return <span>{text}</span>
   }
 else{
     return (
@@ -19,9 +19,9 @@ else{
             <button onClick={() => setHidden(true)}> read less</button>
           )}
         </span>
-      );
+      )
 }
   
 }
 
-export default LessText;
+export default LessText
