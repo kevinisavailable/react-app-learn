@@ -1,11 +1,13 @@
-
+import React from "react";
+import ToggleComponent from "./example1"
 
 function App() {
   return (
-    <div className="App">
-     Hello World
-    </div>
+    <div>
+      <ToggleComponent />
+     </div>
   );
+
 }
 
 export default App;
