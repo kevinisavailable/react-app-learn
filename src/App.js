@@ -1,7 +1,8 @@
 import React from "react";
 // import ToggleComponent from "./example1"
 // import Lesstext from './example2'
-import StepTracker from './example3'
+// import StepTracker from './example3'
+import Items from './example4'
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       and just keep taking the next step 
       towards completing it.`}
       maxLength={35} /> */}
-      <StepTracker />
-      
+      {/* <StepTracker /> */}
+      <Items />
      </div>
   );
 
