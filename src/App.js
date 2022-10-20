@@ -1,9 +1,10 @@
 import Catfact from "./Catfact";
-
+import PredictAge from "./PredictAge";
 function App() {
   return (
     <div className="App">
-      <Catfact />
+      {/* <Catfact /> */}
+      <PredictAge />
     </div>
   )
 }
