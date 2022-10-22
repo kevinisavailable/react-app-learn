@@ -1,10 +1,8 @@
-import Catfact from "./Catfact";
-import PredictAge from "./PredictAge";
+import { Toggle } from "./Toggle";
 function App() {
   return (
     <div className="App">
-      {/* <Catfact /> */}
-      <PredictAge />
+      <Toggle />
     </div>
   )
 }
