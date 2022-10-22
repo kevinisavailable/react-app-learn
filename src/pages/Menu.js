@@ -1,10 +1,14 @@
 import { ChangeProfile } from "./ChangeProfile"
-const Menu = (props)=>{
+import { useContext } from "react"
+import { AppContext } from "../App"
+
+const Menu = ()=>{
+    const {userName} = useContext(AppContext)
     return(
         <div>
             <h1>Menu</h1>
-            <p>Username is {props.userName}</p>
-            <ChangeProfile setuserName={props.setuserName} />
+            <p>Username is {userName}</p>
+            <ChangeProfile />
         </div>
     )
     }
