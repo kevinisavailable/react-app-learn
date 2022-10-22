@@ -13,8 +13,8 @@ const client = new QueryClient({
   return (
     <div>
       <QueryClientProvider client={client}>
-      {/* <CatFact /> */}
-      <Form />
+      <CatFact />
+      {/* <Form /> */}
 
       </QueryClientProvider>
    
