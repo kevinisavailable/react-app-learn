@@ -1,29 +1,16 @@
-import React,{useState , useEffect} from "react";
-import axios from "axios";
+import { useCatFact } from "./useCatFact"
+export const CatFact = ()=>{
+    const {data,isCatLoading,refetchData} = useCatFact()
 
-
-
-function Catfact(){
-    const [catFact,setCatFact]=useState("")
-
-    const fetchCatFact = ()=>{
-    axios.get("https://catfact.ninja/fact")
-    .then((res)=>{
-        (setCatFact(res.data.fact))
-    })}
-
-    useEffect(()=>{
-
-        fetchCatFact()
-    },[])
-  
-   
+    if(isCatLoading){
+        return(
+            <h1>Loading...</h1>
+        )
+    }
     return(
         <div>
-        <button onClick={fetchCatFact}>Generate Cat Fact</button>
-        <p>{catFact}</p>
+            <button onClick={refetchData}>Refetch</button>
+            <p>{data?.fact}</p>
         </div>
     )
 }
-
-export default Catfact 
